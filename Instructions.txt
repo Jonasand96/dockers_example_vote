@@ -1,0 +1,32 @@
+Followed mostly the steps shown at: https://docs.docker.com/desktop/dashboard/
+
+To create an image from Docker Desktop, I made sure to locate myself at the folder containing everything worked in this example [1]
+
+Tested some more times just to get different images running, all of them had different names once loaded [2][3]
+
+Once I was ready to proceed with the example, I ran a redis container with the line shown at [4]
+
+Cloned a repo in gitHub with the following link: https://github.com/dockersamples/example-voting-app.git using Bash
+(MAKE SURE TO SCOPE THE EXAMPLE FOLDER)
+
+The files included in the repo are an example of a voting machine [5] with the following files:
+- A front-end Python web app
+- A Redis queue that collects new votes
+- A -NET Core, Java or .NET Core 2.1 worker which consumes votes and stores them
+- A Postgres database backed by a Docker volume
+- A Node.js web app showing the results in real time
+
+Then, I moved onto the location of the web app named in this case "example-voting-app", and ran the following line on the CLI [6]
+
+Once the app was already running as shown in [7] I could check the dashboard in Docker Desktop as shown in [8]
+
+Afterwards I opened the "example-voting-app_vote_1" with the "Open in browser" button circled in red, just to
+be prompted to my default browser. [9]
+
+As I interacted with the app, I went to "Logs" within Docker Desktop as shown in [10] every interaction was logged there
+
+Stats of the connection and other characteristics could be seen here as well.
+
+While stopping the session, it took a moderate ammount of time, but exited without any problem as seen in [11]
+
+
